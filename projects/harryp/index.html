@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ajax</title>
+    <style>
+        header{
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SEARCH WEB</h1>
+    </header>
+    <div class="searchplace">
+        <input type="text" autofocus>
+        <button class="thebutton">Search</button>
+    </div>
+    <p></p>
+    <ul>
+
+    </ul>
+    <script>
+        document.querySelector("button").onclick = () => {
+            document.querySelector("ul").innerHTML = "";
+            const searchValue = document.querySelector("input").value;
+            const ajax = new XMLHttpRequest();
+            ajax.onload = function(){
+                document.querySelector("p").innerHTML = "Now loading...";
+                setTimeout(() => {
+                    // console.log(JSON.parse(this.responseText).Search);
+                    document.querySelector("p").innerHTML = "";
+                    const movies = JSON.parse(this.responseText).Search;
+                    movies.forEach(food =>{
+                        const item = document.createElement("li");
+                        item.innerHTML = food.Title;
+                        document.querySelector("ul").append(item);
+                    });
+                }, 200)
+            };
+            ajax.open("GET", `https://www.omdbapi.com/?apikey=55e8dc9e&s=${searchValue}`);
+            ajax.send();
+        }
+    </script>
+</body>
+</html>

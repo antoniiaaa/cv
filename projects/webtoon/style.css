@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    --light: #82CD47;
+    --dark: #379237;
+    --item: #000000;
+}
+
+body {
+    font-family: 'inter', sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+header>nav{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+header>nav>ul{
+    list-style-type: none;
+}
+header>nav>ul li{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+section.sliding{
+    width: 100%;
+    height: 700px;
+    background: url("./webtoon1.jpg") center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section.days{
+    width: 100%;
+    height: 100px;  
+}
+section.days>nav{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+section.days>nav>ul{
+    list-style-type: none;
+}
+section.days>nav>ul li{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+section.isi{
+    width: 85%;
+    height: 500px;
+    background: whitesmoke;
+    padding-left: 140px;
+    /* padding-right: 300px; */
+    padding-top: 50px;
+}
+b{
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: top;
+    /* margin-left: 1px; */
+    margin-bottom: 150px;
+    /* flex-direction: column; */
+}
+p{
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: top;
+    margin-left: 10px;
+    margin-bottom: 150px;
+}
+section.isi>.atas{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    /* background-color: yellow; */
+}
+section.isi>.atas>.tlp{
+    width: 200px;
+    height: 200px;
+    background: url("./tlopfix.jpeg") center center / cover;
+    display: flex;
+    padding: 0;
+}
+section.isi>.atas>.sh{
+    width: 200px;
+    height: 200px;
+    background: url("./shfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.isi>.atas>.tb{
+    width: 200px;
+    height: 200px;
+    background: url("./tbfix.jpeg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.isi>.atas>.twtf{
+    width: 400px;
+    height: 200px;
+    background: url("./twtffix.jpeg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.isi>.bawah{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    /* background-color: red; */
+    margin-top: 20px;
+}
+section.isi>.bawah>.mmtb{
+    width: 200px;
+    height: 200px;
+    background: url("./mmtbfix.jpeg") center center / cover;
+    display: flex;
+}
+section.isi>.bawah>.orv{
+    width: 200px;
+    height: 200px;
+    background: url("./orvfix.jpeg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.isi>.bawah>.yt{
+    width: 200px;
+    height: 200px;
+    background: url("./ytfix.jpeg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.isi>.bawah>.lookism{
+    width: 200px;
+    height: 200px;
+    background: url("./lookismfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.isi>.bawah>.asfua{
+    width: 200px;
+    height: 200px;
+    background: url("./aslfuafix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.pembatas{
+    width: 1273px;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    background-color: gray;
+}
+section.middle{
+    width: 100%;
+    height: 200px;
+    margin-top: 0;
+}
+section.middle>h1{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+section.middle>.choices{
+    width: 96%;
+    height: 300px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+section.middle>.choices>.doh{
+    width: 200px;
+    height: 200px;
+    background: url("./dohfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 140px;
+}
+section.middle>.choices>.sob{
+    width: 200px;
+    height: 200px;
+    background: url("./sobfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.middle>.choices>.vh{
+    width: 200px;
+    height: 200px;
+    background: url("./vhfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.middle>.choices>.tm{
+    width: 400px;
+    height: 200px;
+    background: url("./tmfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+
+section.pembatas2{
+    width: 1280px;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 150px;
+    background-color: gray;
+}
+
+section.genre{
+    width: 96%;
+    height: 400px;
+    /* background-color: red; */
+    margin-left: 30px;
+    margin-top: 0;
+}
+section.genre>h1{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+section.genre>.fill{
+    width: 100%;
+    height: 300px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+section.genre>.fill>.comedy{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    display: flex;
+    margin-left: 140px;
+}
+section.genre>.fill>.tddup{
+    width: 200px;
+    height: 200px;
+    background: url("./tddupfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.genre>.fill>.r101{
+    width: 200px;
+    height: 200px;
+    background: url("./r101fix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.genre>.fill>.citb{
+    width: 200px;
+    height: 200px;
+    background: url("./citbfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.genre>.fill>.mybf{
+    width: 200px;
+    height: 200px;
+    background: url("./mybffix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+
+section.genre>.fill2{
+    width: 100%;
+    height: 200px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+section.genre>.fill2>.drama{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    display: flex;
+    margin-left: 140px;
+}
+section.genre>.fill2>.sg{
+    width: 200px;
+    height: 200px;
+    background: url("./sgfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.genre>.fill2>.gs{
+    width: 200px;
+    height: 200px;
+    background: url("./gsfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.genre>.fill2>.wh{
+    width: 200px;
+    height: 200px;
+    background: url("./whfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+section.genre>.fill2>.mrtd{
+    width: 200px;
+    height: 200px;
+    background: url("./mrtdfix.jpg") center center / cover;
+    display: flex;
+    margin-left: 20px;
+}
+
+section.pembatas3{
+    width: 100%;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 30px; */
+    margin-top: 150px;
+    background-color: gray;
+}
+
+section.footer>.pembatasmini{
+    width: 100%;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 30px; */
+    margin-top: 0px;
+    background-color: gray;
+}
+
+section.footer>.one{
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    margin-top: 0px;
+}
+section.footer>.two{
+    width: 100%;
+    height: 250px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+section.footer>.three{
+    height: 200px;
+    width: 100%;
+    /* background-color: green; */
+}
+section.footer>.three>.icon{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+}
+/* section.footer>.three>.icon>.fa-brands{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+section.footer>.three>.mids{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section.footer>.three>.mids>ul{
+    list-style-type: none;
+}
+section.footer>.three>.mids>ul li{
+    display: inline;
+    padding: 0 15px;    
+}
+.info-item{
+    border-right: 2px gray solid;
+}
+section.footer>.three>.mids>.lastlogo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow; 
+    margin-top: 0; 
+}

@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+
+    --brownone: #AD8E70;
+    --bluegreen: #7B8FA1;
+    --greenone: #5F8D4E;
+    --bluefour: #E5E0FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'inter', sans-serif;
+}
+body>div.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.wa-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #5F8D4E;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.wa-icon i{
+    font-size: 50px;
+    color: #E5E0FF;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header>div.header-block {
+    width: 100%;
+    height: 5em;
+    background-color: rgb(94, 74, 74);
+}
+
+header>nav{
+    width: 80%;
+    height: 100px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px var(--bluefour);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+header>nav>ul{
+    list-style-type: none;
+}
+
+header>nav>ul li{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.nav-item{
+    border-right: 2px var(--brownone) dotted;
+}
+
+section.jumbotron {
+    width: 100%;
+    height: 40em;
+    background: url("./Krusty_krab.png") center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+nav.jumbotron-nav {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div.circle-nav {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 0.75em;
+    background-color: var(--bluefour);
+    margin: 0.75em;
+} 
+
+section.content-one{
+    width: 80%;
+    height: 30em;
+    box-sizing: border-box;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+section.content-one>div.left, section.content-one>div.right{
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    /* background-color: var(--greenone); */
+
+}
+section.content-one>div.left .item , section.content-one>div.right .item{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+section.content-one>div.left div.enroll-button{
+    width: 70%;
+    height: 40px;
+    background-color: var(--greenone);
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.content-two{
+    width: 100%;
+    height: 30em;
+    box-sizing: border-box;
+    /* background-color: #7B8FA1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.content-two>.container{
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    /* background-color: #7B8FA1; */
+}
+section.content-two>.container>.content{
+    width: 100%;
+    height: 80%;
+    background: url("./squidward_pasrah.jpeg") center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* flex-end -> biar mulai dr bawah */
+}
+section.content-two, content{
+    color: black;
+}
+section.content-three{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    /* background-color: var(--greenone); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.content-three>.container{
+    width: 100%;
+    height: 100%;
+    background: url(./squiward_tmn.jpeg) center center / cover;
+}
+
+section.content-three>.container>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+section.content-three>.container>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+section.content-three>.container>.content{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+
+section.content-four{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    /* background-color: var(--greenone); */
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: left; */
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+section.content-four>.kiri{
+    /* background-color: black;  */
+    width: 800px;
+    /* 265 */
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 40px;
+} 
+section.content-four>.kiri>.pic1{
+    width: 90%;
+    height: 300px;
+    margin-left: 20px;
+}
+.pic1:hover{
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.kanan:hover{
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+section.content-four>.kanan{
+    width: 800px;
+    height: 100%;
+    /* background-color: yellow; */
+    background: url(./squidward.png) center center / cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: right; */
+}
+section.content-four, .mid{
+    color: black;
+    /* text-align: 12px;
+    text-justify: 12px; */
+    display: flex;
+    flex-direction: row;
+    font-size: 2px;
+}
+
+section.tengah{
+    width: 100%;
+    height: 100px;
+    background-color: #5F8D4E;
+}
+section.tengah>div.middle div.opening{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-evenly;
+    margin: 30px 10px;
+}
+section.tengah>div.enroll-right div.enroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+footer, footer>.container{
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    background-color: #7B8FA1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer>.container{
+    width: 100%;
+}
+footer section.top{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    background-color: var(--bluegreen);
+    display: flex;
+    flex-direction: row;
+    border-bottom: white 0.2em solid;
+    justify-content: space-between;
+}
+footer section.top>div.item{
+    width: 23%;
+    height: 100%;
+    box-sizing: border-box;
+    /* background-color: rgb(60, 114, 184); */
+    display: flex;
+    flex-direction: column;
+}
+div.item-social-media{
+    padding: 4em 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+div.item-social-media>h2{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: var(--bluefour);
+}
+div.item-social-media>div.social-icons{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    color: whitesmoke;
+}
+div.circle-social-icon{
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #E5E0FF;
+    border-radius: 1.5em;
+}
+div.item-contact{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 3em 0;
+    color: #E5E0FF;
+}
+div.item-contact>h2{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--bluefour);
+}
+div.item-contact>ul{
+    list-style-type: none;
+}
+div.item-contact ul li{
+    margin-bottom: 10px;
+    font-size: 11.5pt;
+}
+div.item-about, div.item-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em 0;
+    color: var(--bluefour);
+}
+div.item-contact>h2, div.item-about>h2, div.item-news>h2{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+div.item-contact>ul{
+    list-style-type: none;
+}
+div.item-about>ul{
+    margin: 1.3em 1em;
+}
+div.item-contact ul li, div.item-about ul li, div.item-news ul li {
+    margin-bottom: 10px;
+    font-size: 10pt;
+}
+div.item-contact>ul{
+    margin-top: 1.5em;
+}
+footer section.bottom{
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    background-color: #7B8FA1;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+footer section.bottom>p{
+    font-size: 10pt;
+}
